@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body{
+margin-top:180px;
+color:black;
+
+
+}
+h3{
+font-family:'Muli', sans-serif;
+
+}
+.pb-5, .py-5{
+margin-top:323px;
+}
+
+img{
+	margin-bottom:40px;
+}
+
+.orderOpne{
+float:right;
+margin-top:100px;
+margin-right:-200px;
+}
+.sum{
+float:right;
+margin-right:150px;
+margin-top:40px;
+}
+
+#content{
+margin-left:150px;
+
+}
+
+
+.gdsInfo { float:right; 
+font-size:25px;
+margin-bottom:40px;
+margin-left:40px;
+}
+
+ section#content div.gdsInfo span { display:inline-block; width:100px; font-weight:bold; margin-right:10px; }
+ section#content div.gdsInfo .delete { text-align:right; float:right;
+ }
+ section#content div.gdsInfo .delete button {
+				   background-color: rgba( 255, 255, 255, 0.7 );
+		border-color: orange;
+		border-radius:10px;
+		padding: 4px;
+		margin:10px;
+
+}
+            
+            
+ button{
+ 		   background-color: rgba( 255, 255, 255, 0.7 );
+		border-color: orange;
+		border-radius:10px;
+		padding: 4px;
+		margin:10px;
+ }

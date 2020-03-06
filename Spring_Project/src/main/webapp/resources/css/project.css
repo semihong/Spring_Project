@@ -1,0 +1,17 @@
+@charset "UTF-8";
+#container2{
+margin-top:150px;
+margin-bottom:150px;}
+.nav-item dropdown{
+width:17%;
+float:left;
+}
+
+.list-group-item{
+color:#fd7e14;}
+
+
+img.img-thumbnail{
+width: 320px;
+height:250px;
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+#Holiday{
+margin-bottom:20px;
+margin-top:10px;}
+
+.cart{
+margin-right:40px;}
+.discount{
+float:left;
+
+}
+
+img{
+box-sizing: border-box;
+}
+
+img.img-thumbnail{
+width: 320px;
+height:250px;
+}
+
+img.img-fluid{
+width:200px;
+height:250px;}
+h3.title.text-center.mb-2{
+margin-bottom:50px;}
+

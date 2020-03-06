@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.hsm.mapper.ShopMapper">
+  <insert id="addCart">
+  <![CDATA[
+ insert into insert_cart(id,gdsNum,price,date,gdsName,images)
+     values(#{id},#{gdsNum},#{price},#{date},#{gdsName},#{images})
+]]>
+</insert> 
+ <!--  카트리스트 -->
+<select id="cartList" resultType="com.hsm.model.CartVO">
+	<![CDATA[
+	select*from insert_cart where id=#{id}
+	]]>
+</select>
+ 
+<!--  Delete --> 
+<delete id="cartDel">
+    delete from insert_cart
+    where rno=#{rno};
+
+</delete>
+
+  </mapper>

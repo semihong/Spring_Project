@@ -1,0 +1,19 @@
+@charset "UTF-8";
+#sidebarToggle{
+	text-align:center;
+}
+.btn-primary{
+background-color:#FF5E00;
+    border-color: #FF5E00;}
+    h1 {
+    background: linear-gradient(to right, #FF5E00, #FFE400);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bald;
+    margin-left:280px;
+    
+    }
+    nav-link dropdown-toggle{
+
+float:right;
+}

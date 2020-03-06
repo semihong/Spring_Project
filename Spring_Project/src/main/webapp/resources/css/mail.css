@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+table{
+	   background-color: rgba( 255, 255, 255, 0.6 );
+	padding-top:200px;
+	margin-top:120px;
+		height:500px;
+		color:black;
+	width:400px;
+	text-align:center;
+	
+}
+input{
+	width:200px;
+	   background-color: rgba( 255, 255, 255, 0.5 );
+	border:0 solid black
+}
+button{
+	   background-color: rgba( 255, 255, 255, 0.7 );
+
+
+}
+button#btn{
+				   background-color: rgba( 255, 255, 255, 0.92 );
+		margin-top:40px;
+}
+
+body{
+font-family: 'Muli', sans-serif;}

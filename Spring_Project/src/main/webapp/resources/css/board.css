@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+a{
+color:orange;
+}
+
+ul{
+	list-style:none;
+}
+
+.commentheader{
+	margin-bottom:40px;
+	
+}
+.commenter,commentcontents{
+		margin-bottom:40px;
+}
+
+#replyAddBtn{
+	margin-left:20px;
+	
+}
+.comment{
+	margin-left:0px;
+	
+}
+
+#replytext{
+	margin-top:20px;
+margin-left:90px;
+}
+#replyModBtn,replyDelBtn,closeBtn{
+	margin-bottom:40px;
+	
+}
+.btn2{
+	margin-left:80px;
+}
+table,div{
+font: 'ZCOOL XiaoWei', serif;
+
+}
+nav {
+}
+
+
+table{
+color:black;
+font-size:20px;
+border:none;
+table-frame:void;
+width:900px;
+margin-top:200px;
+}
+.head{
+text-align:center;
+}
+a{
+color:orange;}
+.comment{
+margin-top:40px;
+margin-left:50px;
+}
+#replies {
+
+color:black;
+margin:20px;
+padding:20px;
+}
+.commentcontents{
+margin-bottom:20px;
+}
+
+#replyModBtn{
+	border-color: orange;
+background-color: white;
+padding: 5px;
+margin:10px;
+border-radius:10px;
+width:50px;
+}
+#replyAddBtn{
+border-color: orange;
+background-color: white;
+padding: 5px;
+border-radius:10px;
+width:150px;
+}
+#replyDelBtn{
+	border-color: orange;
+background-color: white;
+padding: 5px;
+margin:10px;
+border-radius:10px;
+width:70px;
+}
+
+#closeBtn{
+		border-color: orange;
+background-color: white;
+padding: 5px;
+margin:10px;
+border-radius:10px;
+width:60px;
+	
+}
+li.replyLi{
+	padding:20px;
+}
+
+button{
+	border-color: orange;
+background-color: white;
+padding: 5px;
+margin:10px;
+border-radius:20px;
+width:40px;
+	
+}
+.h1title{
+
+background: linear-gradient(to right, #FF5E00, #FFE400);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bald;
+
+}
+
+h1{
+	margin-left:-50px;
+	margin-bottom:30px;
+}
+.pt-5, .py-5{
+margin-top:225px;
+margin-left:-30px;
+}
+.inputArea{
+margin-right:400px;
+margin-left:450px;
+}
+
+
+
+label{
+	margin-top:50px;
+}
+
+.head{
+text-align:center;
+}
+a{
+color:orange;}
+
+
+
+.button{
+border-color: orange;
+background-color: white;
+padding: 5px;
+margin:10px;
+border-radius:10px;
+
+}
+
+h2{
+	background: linear-gradient(to right, #FF5E00, #FFE400);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bald;
+	
+}
+
+
+
+
+
+
