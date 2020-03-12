@@ -33,7 +33,9 @@ background-image:url('resources/images/background.jpg');
 <form action="mail" method="post">
 
  <!--   넣어줌으로서 post 방식  -->
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top" style="background-color: #FF5E00">
+  <!-- Navigation -->
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top" style="background-color: #FF5E00">
     <div class="container">
       <a class="navbar-brand" a href="http://localhost:8080/test/"><img src="resources/images/logo2.png" height="100px" width="100px"></a> 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,27 +43,20 @@ background-image:url('resources/images/background.jpg');
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
+     
+
           
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="mail?id=${member.id}">FAQ</a>
           </li>
           
    <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
+             Journey
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="project1">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+             <!-- 넘기는법 --> <a class="dropdown-item" href="project1?id=${member.id}">ASIA</a>
+
             </div>
             </li>
           
@@ -77,13 +72,13 @@ Signup
             </a>
 </li>
   <li class="nav-item">
-            <a class="nav-link" href="log/login">login</a>
+            <a class="nav-link" href="log/login">Login</a>
           </li>
 
   
   <c:if test="${member!=null}">
   <li class="nav-item">
-            <a class="nav-link" href="">${member.id}님</a>
+            <a class="nav-link" href="">${member.id} Welcome</a>
  </li>
 </c:if>    
       
@@ -97,7 +92,7 @@ Signup
               <a class="dropdown-item" href="log/logout">Logout</a>
                     
             
-              <a class="dropdown-item" href="board/list?member=${member.id}">FAQ</a>
+              <a class="dropdown-item" href="board/list?member=${member.id}">Review</a>
  </div>
  </li>
  </c:if>
@@ -118,7 +113,7 @@ Signup
     </div>
 
   </nav>
-
+<!--  nav -->
 
       <!-- Divider -->
       <hr class="sidebar-divider">a

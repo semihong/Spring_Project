@@ -26,7 +26,7 @@
 					alert("Added to the Cart");
 					
 				}else{
-					alert("Please Login");
+					alert("Please Log in");
 				}
 				},
 			

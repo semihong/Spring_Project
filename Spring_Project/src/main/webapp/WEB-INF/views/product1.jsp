@@ -68,33 +68,26 @@ $(function(){
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
+     
+
           
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="mail?id=${member.id}">FAQ</a>
           </li>
           
    <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
+             Journey
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="project1">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+             <!-- 넘기는법 --> <a class="dropdown-item" href="project1?id=${member.id}">ASIA</a>
+
             </div>
             </li>
           
           <li class="nav-item">
-            <a class="nav-link " ="blog"  >
- blog
+            <a class="nav-link " href="blog" >blog
+
             </a>
     
           </li>
@@ -110,7 +103,7 @@ Signup
   
   <c:if test="${member!=null}">
   <li class="nav-item">
-            <a class="nav-link" href="">${member.id}님</a>
+            <a class="nav-link" href="">${member.id} Welcome</a>
  </li>
 </c:if>    
       
@@ -124,7 +117,7 @@ Signup
               <a class="dropdown-item" href="log/logout">Logout</a>
                     
             
-              <a class="dropdown-item" href="board/list?member=${member.id}">FAQ</a>
+              <a class="dropdown-item" href="board/list?member=${member.id}">Review</a>
  </div>
  </li>
  </c:if>
@@ -145,7 +138,7 @@ Signup
     </div>
 
   </nav>
-
+<!--  nav -->
 
 
   

@@ -8,7 +8,7 @@
 </head>
 <body>
   <!-- Navigation -->
- <!-- Navigation -->
+  <!-- Navigation -->
   
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top" style="background-color: #FF5E00">
     <div class="container">
@@ -18,12 +18,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
+     
+
           
           <li class="nav-item">
             <a class="nav-link" href="mail?id=${member.id}">FAQ</a>
@@ -35,9 +31,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
              <!-- 넘기는법 --> <a class="dropdown-item" href="project1?id=${member.id}">ASIA</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">Europe</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">America</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">Africa</a>
+
             </div>
             </li>
           
@@ -59,7 +53,7 @@ Signup
   
   <c:if test="${member!=null}">
   <li class="nav-item">
-            <a class="nav-link" href="">${member.id}님</a>
+            <a class="nav-link" href="">${member.id} Welcome</a>
  </li>
 </c:if>    
       

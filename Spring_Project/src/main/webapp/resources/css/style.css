@@ -895,9 +895,12 @@ background-color: #212121;
     border: none;
     padding: 10px;
 }
-
+.mt-lg-5{
+	margin-top:-20spx;
+}
 footer {
     background: #FF5E00;
+    margin-top:50px;
 }
 
 .footer-w3layouts-head h2 a {

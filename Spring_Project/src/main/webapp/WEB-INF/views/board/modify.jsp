@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+           <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +22,7 @@
 
 
 <body>
- <!-- Navigation -->
+<!-- Navigation -->
   
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top" style="background-color: #FF5E00">
     <div class="container">
@@ -30,15 +32,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
+     
+
           
           <li class="nav-item">
-            <a class="nav-link" href="mail?id=${member.id}">FAQ</a>
+            <a class="nav-link" href="../mail?id=${member.id}">FAQ</a>
           </li>
           
    <li class="nav-item dropdown">
@@ -46,19 +44,19 @@
              Journey
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-             <!-- 넘기는법 --> <a class="dropdown-item" href="project1?id=${member.id}">ASIA</a>
+             <!-- 넘기는법 --> <a class="dropdown-item" href="../project1?id=${member.id}">ASIA</a>
 
             </div>
             </li>
           
           <li class="nav-item">
-            <a class="nav-link " href="blog" >blog
+            <a class="nav-link " href="../blog" >blog
 
             </a>
     
           </li>
                    <li class="nav-item">
-            <a class="nav-link " href="member"  >
+            <a class="nav-link " href="../member"  >
 Signup
             </a>
 </li>
@@ -83,7 +81,7 @@ Signup
               <a class="dropdown-item" href="../log/logout">Logout</a>
                     
             
-              <a class="dropdown-item" href="board/list?member=${member.id}">Review</a>
+              <a class="dropdown-item" href="../board/list?member=${member.id}">Review</a>
  </div>
  </li>
  </c:if>
@@ -104,7 +102,6 @@ Signup
     </div>
 
   </nav>
-
 
 <form action="modify" method="post">
 <center><table border="1" width="800px" height=500px"></center>

@@ -37,7 +37,6 @@
       <!--stylesheets-->
       <link href="resources/css/style.css" rel='stylesheet' type='text/css' media="all">
      
-      <link href="resources/css/dashboard.css" rel='stylesheet' type='text/css' media="all">
 
 
 </head>
@@ -59,9 +58,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
+     
 
           
           <li class="nav-item">
@@ -131,7 +128,7 @@ Signup
     </div>
 
   </nav>
-
+<!--  nav -->
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -363,18 +360,16 @@ Signup
                <div class="col-lg-3 col-md-6 col-sm-6 about-right">
                   <img src="resources/images/farm.png" alt="" class="img-fluid" height="100px">
                   <div class="about-four-wthree mt-3">
-                     <h4>Farming &Fishing Tours</h4>
-                     <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                     <h4>Farming &Fishing </h4>
                   </div>
                   <div class="outs_more-buttn mt-md-4 mt-3">
                      <a href="#blog">Read More</a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6 about-right">
-                  <img src="resources/images/culture.JPG" alt="" class="img-fluid">
+                  <img src="resources/images/culture.JPG" alt="" class="img-fluid"  width="200px" height="250px">
                   <div class="about-four-wthree mt-3">
-                     <h4>Local Experience Tours</h4>
-                     <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                     <h4>Local Experience </h4>
                   </div>
                   <div class="outs_more-buttn mt-md-4 mt-3">
                      <a href="#blog">Read More</a>
@@ -384,7 +379,6 @@ Signup
                   <img src="resources/images/home.png" alt="" class="img-fluid">
                   <div class="about-four-wthree mt-3">
                      <h4>Trekking Tours</h4>
-                     <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
                   </div>
                   <div class="outs_more-buttn mt-md-4 mt-3">
                      <a href="#blog">Read More</a>
@@ -394,8 +388,7 @@ Signup
                   <img src="resources/images/halo.png" alt="" class="img-fluid">
                   <div class="about-four-wthree mt-3">
                      <h4>Beach&Cruise</h4>
-                      <h4>Tour</h4>
-                     <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                   
                   </div>
                   <div class="outs_more-buttn mt-md-4 mt-3">
                      <a href="#blog">Read More</a>

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+           <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,90 +10,127 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+
   <title>Modern Business - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="..resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
-  <link href="..resources/css/modern-business.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>    
   <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="resources/css/blog.css" rel='stylesheet' type='text/css' media="all">
 
+  <!-- Bootstrap core CSS -->
+  <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="resources/css/modern-business.css" rel="stylesheet">
+
+ <!--booststrap-->
+      <!--//booststrap end-->
+      <!-- font-awesome icons -->
+      <link href="resources/css/fonts/font-awesome.min.css" rel="stylesheet">
+      <!-- //font-awesome icons -->
+ 
+<!-- //font-awesome icons -->
+      <!--stylesheets-->
+      <link href="resources/css/style.css" rel='stylesheet' type='text/css' media="all">
+     
 </head>
 
 <body>
-
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top" style="background-color: #FF5E00">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" a href="http://localhost:8080/test/"><img src="resources/images/logo2.png" height="100px" width="100px"></a> 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+     
+
+          
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="mail?id=${member.id}">FAQ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item active dropdown">
+          
+   <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
+             Journey
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item active" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+             <!-- 넘기는법 --> <a class="dropdown-item" href="project1?id=${member.id}">ASIA</a>
+
             </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
+            </li>
+          
+          <li class="nav-item">
+            <a class="nav-link " href="blog" >blog
+
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-            </div>
+    
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
+                   <li class="nav-item">
+            <a class="nav-link " href="member"  >
+Signup
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item" href="404.html">404</a>
-              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
+</li>
+  <li class="nav-item">
+            <a class="nav-link" href="log/login">login</a>
           </li>
+
+  
+  <c:if test="${member!=null}">
+  <li class="nav-item">
+            <a class="nav-link" href="">${member.id} Welcome</a>
+ </li>
+</c:if>    
+      
+      
+        <c:if test="${member!=null}">
+<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             My Page
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+         
+              <a class="dropdown-item" href="log/logout">Logout</a>
+                    
+            
+              <a class="dropdown-item" href="board/list?member=${member.id}">Review</a>
+ </div>
+ </li>
+ </c:if>
+
+ <c:if test="${member!=null}">
+<div class="cart">
+<a href="cartList?id=${member.id}"><img src="resources/images/cart.png"   height="45px" width="45px" onclick="showPopup()"></a>
+</div>
+</c:if>
+
         </ul>
       </div>
+       <div class="brand">
+      
+<a href="https://www.instagram.com/vacayy_v/"> <img src="resources/images/insta.png" height="35px" width="35px"></a>
+<a href="https://www.facebook.com/vacayy.vacayy.5"><img src="resources/images/facebook.png" height="35px" width="40px"></a>
+</div> 
     </div>
+
   </nav>
+<!--  nav -->
+
+
+
 
   <!-- Page Content -->
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Portfolio 1
-      <small>Subheading</small>
-    </h1>
-
+  
     <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">Portfolio 1</li>
+   
+      <li class="breadcrumb-item active">BLOG</li>
     </ol>
 
     <!-- Project One -->
@@ -102,17 +141,18 @@
       <div class="col-md-7">
         <a href="#">
           
-          <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          <img src="resources/images/seoul.jpg" width="620px" height="250px">
         </a>
       </div>
       <div class="col-md-5">
      
-     
+     <h3>Seoul</h3>
        <!--   <td><h3><a href=project1>Project One ${detail.subject}  </a></h3></td> -->
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-      <!--  like 이미지파일  -->
-      <img src="resources/images/like.png" >
+        <p>Seoul, officially the Seoul Special City, is the capital and largest metropolis of South Korea.</p><p> With the surrounding Incheon metropolis and Gyeonggi province, Seoul forms the heart of the Seoul Capital Area.</p>
+      <!--  like 이미지파일  
+      <img src="resources/images/like.png" width="50px" height="50px" >-->
+      <a class="btn btn-primary" href="#">View
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
@@ -125,13 +165,13 @@
     <div class="row">
       <div class="col-md-7">
         <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          <img src="resources/images/dubai.jpg" width="620px" height="250px">
         </a>
       </div>
       <div class="col-md-5">
-        <h3>Project Two</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-        <a class="btn btn-primary" href="#">View Project
+      <h3>Dubai</h3>
+        <p> Dubai is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai.</p><p> Located in the eastern part of the Arabian Peninsula on the coast of the Persian Gulf, Dubai aims to be the business hub of Western Asia.</p>
+        <a class="btn btn-primary" href="#">View
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
@@ -144,13 +184,13 @@
     <div class="row">
       <div class="col-md-7">
         <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+           <img src="resources/images/hcm.jpg" width="620px" height="250px">
         </a>
       </div>
       <div class="col-md-5">
-        <h3>Project Three</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-        <a class="btn btn-primary" href="#">View Project
+        <h3>Ho Chi Minh City</h3>
+        <p>Ho Chi Minh also known by Khmer name Prey Nokor, and its former name of Saigon, is the most populous city in Vietnam with a population of 8.4 million as of 2017.</p><p> Located in southeastern Vietnam, the metropolis surrounds the Saigon River and covers about 2,061 square kilometres (796 square miles).</p>
+        <a class="btn btn-primary" href="#">View
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
@@ -164,13 +204,13 @@
 
       <div class="col-md-7">
         <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+          <img src="resources/images/hongkong.jpg" width="620px" height="250px">
         </a>
       </div>
       <div class="col-md-5">
-        <h3>Project Four</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-        <a class="btn btn-primary" href="#">View Project
+        <h3>Hong Kong</h3>
+        <p>Hong Kong is officially the Hong Kong Special Administrative Region of the People's Republic of China (HKSAR), is a city and special administrative region on the eastern side of the Pearl River estuary in southern China.</p><p> With over 7.4 million people of various nationalities[d] in a 1,104-square-kilometre (426 sq mi) territory, Hong Kong is one of the most densely populated places in the world.</p>
+        <a class="btn btn-primary" href="#">View 
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
@@ -219,8 +259,8 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="../resources/vendor/jquery/jquery.min.js"></script>
-  <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="resources/vendor/jquery/jquery.min.js"></script>
+  <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
